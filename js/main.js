@@ -30,6 +30,10 @@ for (let i = 1; i <= 100; i++){
         }
     }
 
+    fizzCard.addEventListener("click", function(){
+        console.log(`Il valore reale di questa carta è ${i}`);
+    })
+
     // Append the card in the wrapper element to be shown in the page
     cardsWrapper.append(fizzCard);
 }
