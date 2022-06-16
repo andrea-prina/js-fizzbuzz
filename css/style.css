@@ -1,20 +1,50 @@
-body {
-    background-color: #083B4C;
+:root {
+    /* Color variables */
+    --mainBgColor: #083B4C;
+    
+    --cardColor1: #1389B2;
+    --cardColor2: #0CD6A1;
+    --cardColor3: #FFD166;
+    --cardColor4: #F0466F;
+
 }
 
+
+body {
+    background-color: var(--mainBgColor);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+/* Wrapper continer with width in vw to help realize squared cards */
 .ms_container {
     width: 80vw;
     margin: 0 auto;
     border: 1px solid red;
 }
 
+/* Card to display the results. They are squared and in 10 elements rows */
 .ms_card {
     width: calc((100% - 10px * 2 * 10) / 10);
     height: calc((80vw - 10px * 2 * 10) / 10);
     margin: 10px;
-    border: 1px dashed green;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* Color for generic number card */
+.card-bg-1 {background-color: var(--cardColor1);}
+
+/* Color for "Fizz" card */
+.card-bg-2 {background-color: var(--cardColor2);}
+
+/* Color for "Buzz" card */
+.card-bg-3 {background-color: var(--cardColor3);}
+
+/* Color for "FizzBuzz" card */
+.card-bg-4 {background-color: var(--cardColor4);}

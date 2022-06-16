@@ -4,7 +4,7 @@ for (let i = 1; i <= 100; i++){
 
     // Create a new card element and give it the appropriate class
     const fizzCard = document.createElement("div");
-    fizzCard.classList.add("ms_card")
+    fizzCard.classList.add("ms_card");
 
     // Check if the value is multiple of 3 and 5 - if yes, print "FizzBuzz"
     if (i % 3 == 0 && i % 5 == 0){
